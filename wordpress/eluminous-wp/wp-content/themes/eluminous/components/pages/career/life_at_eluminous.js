@@ -1,0 +1,1 @@
+jQuery(document).ready(function(){jQuery(".gallery_wrapper_slider").owlCarousel({loop:true,autoplay:true,nav:true,autoplayTimeout:3e3,responsiveClass:true,responsive:{0:{items:1,loop:!0},641:{items:2,loop:!0},1200:{items:4,loop:!0}},})})

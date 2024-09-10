@@ -1,0 +1,1280 @@
+.staff_augmentation_banner {
+  background-image: url(../../assets/images/staff-augmentation/staff-augmentation-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+} 
+
+.hire_form_tab_wrapper {
+  max-width: 615px;
+  margin: 0 auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  max-height: 750px;
+  min-height: 750px;
+  background-color: #fff;
+  box-shadow: 0px 30px 60px 0 rgba(0, 0, 0, 0.1);
+  margin: 40px 0 0;
+  position: relative;
+}
+
+.hire_form_tab_wrapper.congratulation_active {
+  min-height: auto;
+  max-height: 100%;
+}
+
+.staff_augmentation_banner .text .testi_icon {
+  position: absolute;
+  bottom: 150px;
+  right: 0;
+}
+
+.hire_form_tab_wrapper .options_list_wrapper {
+  overflow-y: auto;
+  max-height: 600px;
+  padding-bottom: 80px;
+  padding-right: 2px;
+}
+
+.hire_form_tab_wrapper .options_list_wrapper::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5;
+}
+
+.hire_form_tab_wrapper .options_list_wrapper::-webkit-scrollbar {
+  width: 6px;
+  background-color: #f5f5f5;
+}
+
+.hire_form_tab_wrapper .options_list_wrapper::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.hire_form_tab_wrapper .tab-content>.active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  left: 0;
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 100%);
+  z-index: 99;
+  pointer-events: none;
+}
+
+.hire_form_tab_wrapper .tab-content>.active[id="estimate"]::before {
+  display: none;
+}
+
+.hire_form_tab_wrapper .tab-content>.active[id="estimate"] .options_list_wrapper {
+  padding: 0;
+}
+
+.hire_form_tab_wrapper .tab-content {
+  padding: 30px;
+}
+
+.hire_form_tab_wrapper>.nav {
+  column-gap: 0px;
+  border: 0;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.hire_form_tab_wrapper>.nav .nav-link {
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #ebebeb;
+  color: #000;
+  border-radius: 0;
+  width: 100%;
+  border: 0;
+  pointer-events: none;
+}
+
+.hire_form_tab_wrapper>.nav .nav-link.active {
+  background-color: #33bfff;
+  color: #fff;
+  border: 0;
+  /* border-radius: 0; */
+}
+
+.hire_form_tab_wrapper>.nav li {
+  flex: 0 0 calc(33.33% - 1px);
+}
+
+.hire_form_tab_wrapper .heading_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.hire_form_tab_wrapper .heading_wrapper .heading {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: normal;
+  color: #111111;
+}
+
+.hire_form_tab_wrapper .heading_wrapper .heading .small_text {
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+  color: #111111;
+}
+
+.hire_form_tab_wrapper .heading_wrapper .heading .blue_text,
+.hire_form_tab_wrapper .options_list_wrapper .options_list .blue_text {
+  color: #0d56b0;
+}
+
+.hire_form_tab_wrapper .heading_wrapper .btn-group,
+.hire_form_tab_wrapper > .btn_bottom_wrap .btn-group{
+  gap: 5px;
+}
+
+.hire_form_tab_wrapper .heading_wrapper .btn-group .btn,
+  .hire_form_tab_wrapper > .btn_bottom_wrap .btn {
+  background-color: #ebebeb;
+  color: #000000;
+  border-radius: 5px;
+  padding: 6px 15px;
+  border: 0;
+  min-height: auto;
+  height: auto;
+  height: 36px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  gap: 10px;
+  text-transform: uppercase;
+}
+
+
+.hire_form_tab_wrapper .heading_wrapper .btn-group .btn.active,
+  .hire_form_tab_wrapper > .btn_bottom_wrap .btn.active {
+  box-shadow: none;
+  background-color: #33bfff;
+  color: #fff;
+}
+
+.hire_form_tab_wrapper .heading_wrapper .btn-group .btn i,
+.hire_form_tab_wrapper > .btn_bottom_wrap .btn i {
+  display: block;
+}
+
+.hire_form_tab_wrapper .heading_wrapper .btn-group .btn i,
+.hire_form_tab_wrapper > .btn_bottom_wrap .btn i {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.hire_form_tab_wrapper .options_list_wrapper .options_list,
+.hire_form_tab_wrapper .accordion>.card>.card-header .btn,
+.hire_form_tab_wrapper .form-group .form-control {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ededed;
+  padding: 15px 20px;
+  align-items: center;
+  font-size: 18px;
+  color: #161616;
+  border-radius: 5px;
+  font-weight: 400;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.hire_form_tab_wrapper .options_list_wrapper .options_list:last-child {
+  margin-bottom: 0;
+}
+
+.hire_form_tab_wrapper .increment_decrement_wapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  max-width: 120px;
+  width: 100%;
+  gap: 0;
+}
+
+.hire_form_tab_wrapper .increment_decrement_wapper button,
+.hire_form_tab_wrapper .increment_decrement_wapper input {
+  outline: none;
+  border: none;
+  font-size: 18px;
+  color: #000;
+  width: 36px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 36px;
+}
+
+.hire_form_tab_wrapper .increment_decrement_wapper input {
+  width: 48px;
+  text-align: center;
+  flex: 0 0 auto;
+  border: 1px solid #ededed;
+}
+
+.hire_form_tab_wrapper .increment_decrement_wapper button {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.hire_form_tab_wrapper .increment_decrement_wapper button:hover,
+.hire_form_tab_wrapper .increment_decrement_wapper button.active {
+  background-color: #33bfff;
+  color: #fff;
+}
+
+.hire_form_tab_wrapper .increment_decrement_wapper button:nth-last-child(1):active {
+  background-color: #33bfff;
+  color: #fff;
+}
+
+.hire_form_tab_wrapper .increment_decrement_wapper button:nth-child(1):active {
+  background-color: #33bfff;
+  color: #fff;
+}
+
+.hire_form_tab_wrapper .accordion>.card {
+  margin-bottom: 15px;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  /* overflow: hidden; */
+}
+
+.hire_form_tab_wrapper .accordion>.card>.card-header {
+  padding: 0;
+  background-color: transparent;
+}
+
+.hire_form_tab_wrapper .accordion>.card>.card-header .btn {
+  font-weight: 600;
+  border: 0;
+  background-color: transparent;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  justify-content: flex-end;
+  gap: 8px;
+  min-height: 45px;
+}
+
+.hire_form_tab_wrapper .accordion>.card>.card-header .btn[aria-expanded="true"]>span {
+  font-weight: 600;
+}
+
+.hire_form_tab_wrapper .accordion>.card>.card-header .btn:hover,
+.hire_form_tab_wrapper .accordion>.card>.card-header .btn:focus {
+  text-decoration: none;
+}
+
+.hire_form_tab_wrapper .accordion>.card>.card-header .btn>span {
+  margin-right: auto;
+}
+
+.hire_form_tab_wrapper .accordion>.card>.card-header .btn i {
+  display: block;
+}
+
+.hire_form_tab_wrapper .accordion>.card>.card-header .btn .icons,
+.hire_form_tab_wrapper .accordion>.card .form_wrapper .form-group:last-child .icons {
+  border: 0;
+  /* font-size: 14px; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px;
+  width: 12px;
+  height: 14px;
+  background-color: transparent;
+  /* border-radius: 50px; */
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.hire_form_tab_wrapper .accordion>.card>.card-header .btn .icons:hover {
+  background-color: #ebebeb;
+}
+
+.hire_form_tab_wrapper .copy_icon {
+  background-image: url(../../assets/images/staff-augmentation/icons/copy.svg);
+}
+
+.hire_form_tab_wrapper .delete_icon {
+  background-image: url(../../assets/images/staff-augmentation/icons/delete.svg);
+}
+
+.hire_form_tab_wrapper .close_icon {
+  background-image: url(../../assets/images/staff-augmentation/icons/close.svg);
+  width: 12px !important;
+  height: 12px !important;
+  background-size: 12px !important;
+}
+
+.hire_form_tab_wrapper .accordion>.card>.card-header .btn .plus_icons {
+  border: 0;
+  background-color: #ebebeb;
+  width: 56px;
+  height: 56px;
+  border-radius: 0 0px 0px 0px;
+  font-size: 25px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.hire_form_tab_wrapper .accordion>.card>.card-header .btn .icons.plus_icons span {
+  transition: all 0.3s;
+  display: flex;
+  transform-origin: center center;
+  /* width: 20px; */
+  /* height: 20px; */
+  justify-content: center;
+  align-items: center;
+  /* margin: 0 auto; */
+}
+
+.hire_form_tab_wrapper .accordion>.card>.card-header .btn[aria-expanded="true"] .icons.plus_icons span {
+  transform: rotate(134deg);
+  /* display: block; */
+  transform-origin: center center;
+}
+
+.hire_form_tab_wrapper .form-group {
+  margin-bottom: 15px;
+}
+
+.hire_form_tab_wrapper .form-group label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 3px;
+}
+
+.hire_form_tab_wrapper .card-body .form-group .form-control {
+  height: 36px;
+  min-height: 36px;
+  padding: 5px 15px !important;
+  font-size: 13px !important;
+  border: 1px solid #ebebeb !important;
+  background-size: 10px;
+}
+
+.hire_form_tab_wrapper .congratulations_wrapper .blue_wrapper .small_bottom_text,
+.hire_form_tab_wrapper .form-group select.form-control {
+  background-image: url(../../assets/images/staff-augmentation/icons/down.svg);
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: calc(100% - 10px) center;
+  border-color: #cccccc;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  color: #000;
+  margin: 0;
+}
+
+.hire_form_tab_wrapper .round_checkbox {
+  position: relative;
+  /* width: 24px; */
+  /* height: 24px; */
+  z-index: 1;
+}
+
+.hire_form_tab_wrapper .round_checkbox label {
+  /* background-color: #fff; */
+  /* border: 2px solid #EBEBEB; */
+  /* border-radius: 50%; */
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.hire_form_tab_wrapper .round_checkbox label:after {
+  content: "";
+  background-image: url(../../assets/images/staff-augmentation/icons/radio.svg);
+  background-repeat: no-repeat;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  right: calc(0% - -20px);
+  left: auto;
+  z-index: 1;
+  background-size: 24px;
+  background-position: center;
+}
+
+.hire_form_tab_wrapper .round_checkbox input[type="radio"],
+.hire_form_tab_wrapper .round_checkbox input[type="checkbox"] {
+  visibility: hidden;
+  /* width: 100%; */
+}
+
+.hire_form_tab_wrapper .round_checkbox input[type="radio"]:checked+label:after,
+.hire_form_tab_wrapper .round_checkbox input[type="checkbox"]:checked+label:after {
+  background-image: url(../../assets/images/staff-augmentation/icons/radio-fill.svg);
+  opacity: 1;
+}
+
+.hire_form_tab_wrapper .form-group .btn {
+  width: 100%;
+  height: 64px;
+}
+
+.hire_form_tab_wrapper .form-group>.form-control {
+  padding: 15px 20px !important;
+  font-size: 18px !important;
+  height: auto;
+}
+
+.hire_form_tab_wrapper .form-group>textarea.form-control {
+  min-height: 255px;
+  max-height: 255px;
+  overflow-y: auto;
+}
+
+.hire_form_tab_wrapper .accordion>.card .card-body {
+  padding: 10px 20px;
+}
+
+.hire_form_tab_wrapper .accordion>.card .form_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hire_form_tab_wrapper .accordion>.card .form_wrapper .form-group {
+  flex: 1;
+  margin-bottom: 12px;
+}
+
+.hire_form_tab_wrapper .accordion>.card .form_wrapper .form-group:first-child {
+  flex: 1;
+}
+
+.hire_form_tab_wrapper .accordion>.card .form_wrapper .form-group:last-child {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  flex: 0 0 85px;
+}
+
+.hire_form_tab_wrapper .accordion>.card .form_wrapper .form-group:last-child label {
+  flex: 0 0 100%;
+}
+
+.hire_form_tab_wrapper .accordion>.card .form_wrapper .form-group:last-child .form-control {
+  flex: 1;
+}
+
+.hire_form_tab_wrapper .accordion>.card .card-body .plus_icons {
+  color: #2166f3;
+  font-size: 11px;
+  font-weight: 500;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+.hire_form_tab_wrapper .accordion>.card .card-body .plus_icons:hover {
+  text-decoration: underline;
+}
+
+.hire_form_tab_wrapper .congratulations_wrapper {
+  display: none;
+  background-color: #fff;
+}
+.hire_form_tab_wrapper .form_wrapper:not(.cloned) button.icons.close_icon {
+  opacity: 0;
+}
+
+.hire_form_tab_wrapper .congratulations_wrapper::before {
+  content: "";
+  background-image: url(../../assets/images/staff-augmentation/celebration.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 35%;
+  z-index: 1;
+  mix-blend-mode: darken;
+  pointer-events: none;
+}
+
+.hire_form_tab_wrapper .congratulations_wrapper .heading {
+  font-weight: 700;
+  font-size: 32px;
+  color: #111111;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hire_form_tab_wrapper .congratulations_wrapper .blue_wrapper {
+  background-color: #edf5ff;
+  text-align: center;
+  padding: 30px 30px 40px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.hire_form_tab_wrapper .congratulations_wrapper .blue_wrapper h6 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.hire_form_tab_wrapper .congratulations_wrapper .blue_wrapper .price {
+  color: #158a02;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: normal;
+}
+
+.hire_form_tab_wrapper .congratulations_wrapper .blue_wrapper .small_bottom_text {
+  font-size: 13px;
+  font-weight: 500;
+  background-color: #dcecff;
+  position: absolute;
+  top: calc(100% - 15px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 405px;
+  padding: 5px 35px 5px 15px;
+  border-radius: 5px;
+  background-size: 12px;
+}
+
+.congratulations_wrapper .table_wrapper {
+  max-height: 320px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.congratulations_wrapper .table_wrapper::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5;
+}
+
+.congratulations_wrapper .table_wrapper::-webkit-scrollbar {
+  width: 6px;
+  background-color: #f5f5f5;
+}
+
+.congratulations_wrapper .table_wrapper::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.congratulations_wrapper .table_heading {
+  background-color: #33bfff;
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+
+.congratulations_wrapper .table_heading li,
+.congratulations_wrapper .table_grid>li.li_1 {
+  border-right: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.congratulations_wrapper .table_heading li,
+.congratulations_wrapper .table_grid li {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.congratulations_wrapper .table_heading li {
+  color: #fff !important;
+  text-align: center;
+}
+
+.congratulations_wrapper .table_heading li,
+.congratulations_wrapper .table_grid>li.li_1,
+.congratulations_wrapper .table_grid li>.table_grid2 li,
+.congratulations_wrapper .total_price>li {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.congratulations_wrapper .table_grid,
+.congratulations_wrapper .total_price {
+  display: flex;
+}
+
+.congratulations_wrapper .table_grid li {
+  text-align: center;
+  font-weight: 400;
+  color: #161616;
+  flex: 1;
+  border-right: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.congratulations_wrapper .table_grid li ul.table_grid2,
+.congratulations_wrapper .table_grid {
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.congratulations_wrapper .table_grid li ul.table_grid2:last-child,
+.congratulations_wrapper .table_grid li:last-child,
+.congratulations_wrapper .table_heading li:last-child {
+  border: 0;
+}
+
+.congratulations_wrapper .table_grid>li:first-child {
+  font-weight: 600;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.congratulations_wrapper .table_grid:nth-child(even)>li:nth-child(odd) {
+  background-color: #edf5ff;
+}
+
+.congratulations_wrapper .table_grid li small {
+  font-size: 10px;
+  display: block;
+  text-align: center;
+}
+
+.congratulations_wrapper .table_heading li.li_1,
+.congratulations_wrapper .table_grid>li.li_1 {
+  flex: 0 0 180px;
+}
+
+.congratulations_wrapper .table_heading>li.li_2,
+.congratulations_wrapper .table_heading li.li_3,
+.congratulations_wrapper .table_heading>li.li_5,
+.congratulations_wrapper .table_grid li.li_3,
+.congratulations_wrapper .table_grid>li.li_5,
+.congratulations_wrapper .table_grid li>.table_grid2 li.li_1,
+.congratulations_wrapper .table_grid li>.table_grid2 li.li_2,
+.congratulations_wrapper .table_grid li>.table_grid2 li.li_4,
+.congratulations_wrapper .total_price li.li_2 {
+  flex: 0 0 107px;
+}
+
+.congratulations_wrapper .table_grid>li.li_2 {}
+
+.congratulations_wrapper .table_heading>li.li_4,
+.congratulations_wrapper .table_grid li ul.table_grid2 li.li_3 {
+  flex: 0 0 52px;
+}
+
+.congratulations_wrapper .table_grid li {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.congratulations_wrapper .table_grid li ul.table_grid2 {
+  display: flex;
+  align-self: stretch;
+  flex: 0 0 100%;
+}
+
+.congratulations_wrapper .total_price {
+  background-color: #252525;
+  color: #ffffff;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.congratulations_wrapper .total_price>li {
+  background-color: #252525;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 16px;
+}
+
+.congratulations_wrapper .total_price>li.li_1 {
+  flex: 0 0 auto;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  flex: 1;
+  align-items: flex-end;
+}
+
+.congratulations_wrapper .total_price>li.li_2 {}
+
+.congratulations_wrapper .bottom_text {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.congratulations_wrapper .bottom_text .blue_text {
+  color: #256bd3;
+}
+
+.error-border {
+  border: 1px solid red !important;
+}
+
+
+
+@media (max-width: 1440px) {
+  .hire_form_tab_wrapper {
+    margin: 30px 0;
+    max-height: 580px;
+    min-height: 580px;
+    max-width: 555px;
+    margin: 30px auto 0;
+  }
+
+  .hire_form_tab_wrapper .heading_wrapper .heading {
+    font-size: 28px;
+  }
+
+  .hire_form_tab_wrapper .heading_wrapper .btn-group .btn,
+  .hire_form_tab_wrapper > .btn_bottom_wrap .btn {
+    font-size: 13px;
+    gap: 8px;
+  }
+
+  .hire_form_tab_wrapper .options_list_wrapper .options_list {
+    padding: 12px 20px;
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .hire_form_tab_wrapper .increment_decrement_wapper button,
+  .hire_form_tab_wrapper .increment_decrement_wapper input {
+    width: 32px;
+    height: 32px;
+    flex: 0 0 32px;
+    font-size: 16px;
+  }
+
+  .hire_form_tab_wrapper .increment_decrement_wapper {
+    max-width: 96px;
+  }
+
+  .hire_form_tab_wrapper .accordion>.card>.card-header .btn .plus_icons {
+    width: 54px;
+    height: 54px;
+  }
+
+  .hire_form_tab_wrapper .accordion>.card>.card-header .btn {
+    font-size: 16px;
+  }
+
+  .hire_form_tab_wrapper .form-group>.form-control {
+    padding: 12px 20px !important;
+    font-size: 16px !important;
+  }
+
+  .hire_form_tab_wrapper .form-group .btn {
+    height: 60px;
+  }
+
+  .hire_form_tab_wrapper .heading_wrapper .heading .small_text {
+    font-size: 14px;
+  }
+
+  .hire_form_tab_wrapper .card-body .form-group .form-control {
+    /* height: 50px;
+    padding: 10px 15px !important;
+    font-size: 14px !important; */
+  }
+
+  .hire_form_tab_wrapper .form-group {
+    margin-bottom: 12px;
+  }
+
+  .hire_form_tab_wrapper .options_list_wrapper {
+    padding-bottom: 60px;
+    max-height: 440px;
+  }
+
+  .staff_augmentation_banner .text .testi_icon {
+    bottom: 40px;
+    max-width: 220px;
+  }
+
+  .hire_form_tab_wrapper .round_checkbox label:after {
+    height: 20px;
+    width: 20px;
+    background-size: 20px;
+  }
+
+  .hire_form_tab_wrapper .form-group>textarea.form-control {
+    min-height: 155px;
+    max-height: 155px;
+  }
+
+  .congratulations_wrapper .table_heading li.li_1,
+  .congratulations_wrapper .table_grid>li.li_1 {
+    flex: 0 0 165px;
+  }
+
+  .congratulations_wrapper .table_heading>li.li_2,
+  .congratulations_wrapper .table_heading li.li_3,
+  .congratulations_wrapper .table_heading>li.li_5,
+  .congratulations_wrapper .table_grid li.li_3,
+  .congratulations_wrapper .table_grid>li.li_5,
+  .congratulations_wrapper .table_grid li>.table_grid2 li.li_1,
+  .congratulations_wrapper .table_grid li>.table_grid2 li.li_2,
+  .congratulations_wrapper .table_grid li>.table_grid2 li.li_4,
+  .congratulations_wrapper .total_price li.li_2 {
+    flex: 0 0 92px;
+  }
+
+  .congratulations_wrapper .table_grid>li:first-child {
+    padding: 12px 15px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .staff_augmentation_banner .text .testi_icon {
+    max-width: 130px;
+  }
+
+  .hire_form_tab_wrapper .tab-content {
+    padding: 25px 20px;
+  }
+
+  .hire_form_tab_wrapper .options_list_wrapper .options_list {
+    padding: 8px 15px;
+    font-size: 15px;
+  }
+
+  .hire_form_tab_wrapper .heading_wrapper .heading {
+    font-size: 24px;
+  }
+
+  .hire_form_tab_wrapper .heading_wrapper .btn-group .btn,
+  .hire_form_tab_wrapper > .btn_bottom_wrap .btn  {
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 4px 12px;
+  }
+
+  .hire_form_tab_wrapper .accordion>.card>.card-header .btn .plus_icons {
+    height: 50px;
+    width: 50px;
+    font-size: 22px;
+  }
+
+  .hire_form_tab_wrapper .accordion>.card>.card-header .btn {
+    font-size: 15px;
+    min-height: auto;
+    padding-left: 15px;
+  }
+
+  .hire_form_tab_wrapper .options_list_wrapper .options_list,
+  .hire_form_tab_wrapper .accordion>.card>.card-header .btn,
+  .hire_form_tab_wrapper .form-group>.form-control {
+    min-height: 50px;
+  }
+
+  .hire_form_tab_wrapper .form-group>.form-control {
+    font-size: 15px !important;
+    padding: 8px 15px !important;
+  }
+
+  .hire_form_tab_wrapper .card-body .form-group .form-control {
+    /* height: 50px;
+    padding: 8px 15px !important;
+    font-size: 14px !important; */
+  }
+
+  .hire_form_tab_wrapper .card-body .form-group .form-control {
+    /* height: auto;
+    padding: 8px 15px !important;
+    font-size: 14px !important;
+    min-height: 45px; */
+  }
+
+  .congratulations_wrapper .table_heading li.li_1 {
+    display: none;
+  }
+
+  .congratulations_wrapper .table_grid {
+    flex-direction: column;
+  }
+
+  .congratulations_wrapper .table_heading li.li_1,
+  .congratulations_wrapper .table_grid>li.li_1 {
+    flex: 1;
+  }
+
+  .congratulations_wrapper .table_heading>li.li_2,
+  .congratulations_wrapper .table_heading li.li_3,
+  .congratulations_wrapper .table_heading>li.li_5,
+  .congratulations_wrapper .table_grid li.li_3,
+  .congratulations_wrapper .table_grid>li.li_5,
+  .congratulations_wrapper .table_grid li>.table_grid2 li.li_1,
+  .congratulations_wrapper .table_grid li>.table_grid2 li.li_2,
+  .congratulations_wrapper .table_grid li>.table_grid2 li.li_4,
+  .congratulations_wrapper .total_price li.li_2 {
+    flex: 1;
+  }
+
+  .congratulations_wrapper .total_price li.li_2 {
+    flex: 0 0 127px;
+  }
+
+  .congratulations_wrapper .table_grid:nth-child(odd)>li:nth-child(odd) {
+    background-color: #edf5ff;
+  }
+
+  .congratulations_wrapper .table_grid {
+    border-bottom: 0;
+  }
+
+  .congratulations_wrapper .table_wrapper {
+    max-height: 300px;
+  }
+
+  .hire_form_tab_wrapper {
+    max-width: 465px;
+  }
+
+  .hire_form_tab_wrapper .congratulations_wrapper .blue_wrapper .small_bottom_text {
+    max-width: 350px;
+  }
+
+  .hire_form_tab_wrapper .congratulations_wrapper .blue_wrapper {
+    margin-bottom: 50px;
+  }
+
+  .hire_form_tab_wrapper .congratulations_wrapper .heading {
+    font-size: 26px;
+  }
+
+  .hire_form_tab_wrapper .congratulations_wrapper .blue_wrapper .price {
+    font-size: 42px;
+  }
+
+  .hire_form_tab_wrapper .congratulations_wrapper .blue_wrapper {
+    padding: 25px 25px 35px;
+  }
+
+  .hire_form_tab_wrapper .congratulations_wrapper .blue_wrapper h6 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 991px) {
+  .hire_form_tab_wrapper .tab-content>.active::before {
+    display: none;
+  }
+
+  .hire_form_tab_wrapper {
+    margin: 20px auto 50px;
+    max-width: 500px;
+    max-height: max-content;
+    min-height: auto;
+  }
+
+  .staff_augmentation_banner .text .testi_icon {
+    display: none;
+  }
+
+  .hire_form_tab_wrapper .options_list_wrapper {
+    max-height: 100%;
+    padding-bottom: 0;
+  }
+
+  .hire_form_tab_wrapper .heading_wrapper .btn-group .btn,
+  .hire_form_tab_wrapper > .btn_bottom_wrap .btn  {
+    border-radius: 3px !important;
+    padding: 4px 12px;
+    height: 34px;
+    font-size: 11px;
+    line-height: 34px;
+  }
+
+  .hire_form_tab_wrapper .form-group select.form-control {
+    background-size: 13px;
+    background-position: calc(100% - 15px) center;
+  }
+
+  .hire_form_tab_wrapper .accordion>.card .card-body {
+    padding: 15px;
+  }
+
+  .hire_form_tab_wrapper .increment_decrement_wapper input {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .hire_form_tab_wrapper .heading_wrapper .heading {
+    font-size: 22px;
+  }
+
+  .hire_form_tab_wrapper .heading_wrapper .heading .small_text {
+    font-size: 12px;
+  }
+
+  .congratulations_wrapper .total_price li.li_2 {
+    flex: 0 0 140px;
+  }
+
+  .hire_form_tab_wrapper .congratulations_wrapper .heading {
+    font-size: 26px;
+    margin-bottom: 22px;
+  }
+
+  .hire_form_tab_wrapper .congratulations_wrapper .blue_wrapper .price {
+    font-size: 40px;
+  }
+
+  .hire_form_tab_wrapper .congratulations_wrapper .blue_wrapper h6 {
+    font-size: 17px;
+  }
+
+  .hire_form_tab_wrapper .congratulations_wrapper::before {
+    height: 35%;
+  }
+}
+
+@media (max-width: 767px) {
+  .hire_form_tab_wrapper .heading_wrapper .btn-group .btn,
+  .hire_form_tab_wrapper > .btn_bottom_wrap .btn {
+    min-width: auto !important;
+  }
+
+  .hire_form_tab_wrapper .form-group .btn {
+    height: 50px;
+  }
+
+  .hire_form_tab_wrapper .options_list_wrapper .options_list {
+    padding: 5px 15px;
+    font-size: 14px;
+  }
+
+  .hire_form_tab_wrapper .options_list_wrapper .options_list,
+  .hire_form_tab_wrapper .accordion>.card>.card-header .btn,
+  .hire_form_tab_wrapper .form-group>.form-control {
+    min-height: 45px;
+  }
+
+  .hire_form_tab_wrapper .accordion>.card>.card-header .btn .plus_icons {
+    height: 45px;
+    width: 45px;
+    font-size: 20px;
+  }
+
+  .hire_form_tab_wrapper .options_list_wrapper {
+    max-height: 100%;
+    padding-bottom: 0;
+  }
+
+  .hire_form_tab_wrapper {
+    max-height: max-content;
+    min-height: auto;
+  }
+
+  .hire_form_tab_wrapper .heading_wrapper .btn-group .btn i,
+  .hire_form_tab_wrapper > .btn_bottom_wrap .btn i {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 575px) {
+  .hire_form_tab_wrapper>.nav .nav-link {
+    font-size: 11px;
+    padding: 4px 6px;
+  }
+
+  .hire_form_tab_wrapper {
+    border-radius: 5px;
+    /* max-height: 580px; */
+    /* min-height: 580px; */
+  }
+
+  .hire_form_tab_wrapper .heading_wrapper .btn-group .btn,
+  .hire_form_tab_wrapper > .btn_bottom_wrap .btn {
+    font-size: 0;
+    padding: 5px 14px;
+    line-height: 25px;
+    min-height: auto !important;
+    gap: 0;
+  }
+
+  .hire_form_tab_wrapper .heading_wrapper .btn-group .btn i,
+  .hire_form_tab_wrapper > .btn_bottom_wrap .btn i {
+    font-size: 16px;
+  }
+
+  .hire_form_tab_wrapper .tab-content {
+    padding: 20px 15px;
+  }
+
+  .hire_form_tab_wrapper .heading_wrapper .heading {
+    font-size: 20px;
+  }
+
+  .hire_form_tab_wrapper .options_list_wrapper .options_list {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .hire_form_tab_wrapper .increment_decrement_wapper button,
+  .hire_form_tab_wrapper .increment_decrement_wapper input {
+    width: 30px;
+    height: 30px;
+    flex: 0 0 30px;
+  }
+
+  .hire_form_tab_wrapper .increment_decrement_wapper {
+    max-width: 90px;
+  }
+
+  .hire_form_tab_wrapper .accordion>.card>.card-header .btn .plus_icons {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+  }
+
+  .hire_form_tab_wrapper .form-group select.form-control {
+    background-size: 10px;
+  }
+
+  .hire_form_tab_wrapper .round_checkbox label:after {
+    height: 16px;
+    width: 16px;
+    background-size: 16px;
+    right: calc(0% - -15px);
+  }
+
+  .hire_form_tab_wrapper .form-group>.form-control {
+    font-size: 14px !important;
+  }
+
+  .hire_form_tab_wrapper .card-body .form-group .form-control {
+    font-size: 13px !important;
+  }
+
+  .hire_form_tab_wrapper .accordion>.card>.card-header .btn {
+    font-size: 14px;
+  }
+
+  .hire_form_tab_wrapper .tab-content>.active::before {
+    height: 100px;
+  }
+
+  .hire_form_tab_wrapper .options_list_wrapper {
+    max-height: 100%;
+    padding-bottom: 0;
+  }
+
+  .hire_form_tab_wrapper .accordion>.card .form_wrapper:first-child {
+    display: none;
+  }
+
+  .hire_form_tab_wrapper .accordion>.card .form_wrapper .form-group:first-child {
+    flex: 0 0 100%;
+  }
+
+  .hire_form_tab_wrapper .accordion>.card .form_wrapper .form-group {
+    margin: 0;
+  }
+
+  .hire_form_tab_wrapper .accordion>.card .form_wrapper {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .hire_form_tab_wrapper .accordion>.card .form_wrapper:nth-last-child(2) {
+    border: 0;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .hire_form_tab_wrapper .close_icon {
+    width: 10px !important;
+    height: 10px !important;
+    background-size: 10px !important;
+  }
+
+  .congratulations_wrapper .table_heading>li.li_4,
+  .congratulations_wrapper .table_grid li ul.table_grid2 li.li_3 {
+    flex: 0 0 41px;
+  }
+
+  .congratulations_wrapper .total_price>li {
+    padding: 10px 16px;
+  }
+
+  .congratulations_wrapper .total_price>li.li_1 {
+    flex: 3;
+  }
+
+  .congratulations_wrapper .total_price li.li_2 {
+    flex: 1;
+  }
+
+  .hire_form_tab_wrapper .congratulations_wrapper .heading {
+    font-size: 20px;
+  }
+
+  .hire_form_tab_wrapper .congratulations_wrapper .blue_wrapper h6 {
+    font-size: 14px;
+  }
+
+  .hire_form_tab_wrapper .congratulations_wrapper .blue_wrapper .price {
+    font-size: 32px;
+  }
+
+  .hire_form_tab_wrapper .congratulations_wrapper .blue_wrapper .small_bottom_text {
+    font-size: 10px;
+    max-width: 270px;
+    top: calc(100% - 20px);
+  }
+
+  .hire_form_tab_wrapper .congratulations_wrapper .blue_wrapper {
+    margin-bottom: 30px;
+  }
+
+  .congratulations_wrapper .total_price>li {
+    font-size: 12px;
+    text-align: left;
+  }
+
+  .congratulations_wrapper .total_price>li.li_1 {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .congratulations_wrapper .bottom_text {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .congratulations_wrapper .table_heading li, .congratulations_wrapper .table_grid li {
+    font-size: 12px;
+  }
+}

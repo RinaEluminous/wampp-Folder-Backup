@@ -1,0 +1,1 @@
+jQuery(document).ready(function(){if($(window).width()<=575)var d=4;else if($(window).width()<=991)d=6;else if($(window).width()<=1365)d=10;else if(1365<$(window).width())d=12;var n=1,o=$(".they_believed_us2 .logo"),w=o.length;o.slice(d).hide(),$("#loadMoreBtn").click(function(){var e=n*d,i=(n+1)*d;o.slice(e,i).fadeIn(),w<=++n*d&&$("#loadMoreBtn").hide()})});

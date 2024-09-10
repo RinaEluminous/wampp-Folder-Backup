@@ -1,0 +1,6 @@
+//wp details 
+
+**************************************************
+db name = eluminous-wp
+username = eluminous
+password = eluminous@123

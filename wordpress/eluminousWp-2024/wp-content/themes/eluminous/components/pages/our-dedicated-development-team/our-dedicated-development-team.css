@@ -1,0 +1,183 @@
+.dedicated_development_team_wrapper {}
+
+.dedicated_development_team_wrapper .development_team .owl-stage {
+
+    align-items: flex-start;
+}
+
+.dedicated_development_team_wrapper .development_team .owl-stage .owl-item {
+    display: flex;
+    flex: 0 1 auto;
+    align-self: stretch;
+}
+
+.dedicated_development_team_box {
+    max-width: 350px;
+    padding: 30px 15px;
+    flex: 1 0 0;
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.10);
+    margin: 30px 0px 30px 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dedicated_development_team_box .profile_img {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.dedicated_development_team_box .profile_img img {}
+
+.dedicated_development_team_box .profile_name {
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 5px;
+    background-image: url(../../../assets/images/team/verified.svg);
+    background-size: 17px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    display: inline-block;
+    padding-right: 22px;
+    align-self: flex-start;
+}
+
+.dedicated_development_team_box .profile_designation {
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+    margin-bottom: 8px;
+}
+
+.dedicated_development_team_box .year {
+    color: #595959;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.dedicated_development_team_box .year strong {
+    color: #000;
+}
+
+.dedicated_development_team_box .skills {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 5px;
+    align-self: stretch;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.dedicated_development_team_box .skills li {
+    display: flex;
+    padding: 7px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 50px;
+    border: 1px solid #B9B9B9;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    /* 150% */
+}
+
+.dedicated_development_team_box .skills li.read-more-less-buttons {
+    color: #595959;
+    padding: 0;
+    font-weight: 700;
+    transition: all 0.3s;
+    /* padding: 7px 15px; */
+}
+
+.dedicated_development_team_box .skills li>span {
+    display: inline-block;
+    padding: 7px 15px;
+}
+
+.dedicated_development_team_box .skills li.read-more-less-buttons:hover {
+    border-color: #013f81;
+    background-color: #013f81;
+    color: rgba(var(--white));
+    cursor: pointer;
+}
+
+.dedicated_development_team_box .btn {
+    min-width: 145px;
+    min-height: 45px;
+    font-size: 16px;
+    margin-top: auto;
+}
+.dedicated_development_team_box .profile_img_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.dedicated_development_team_box .profile_img_wrapper .rating {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    color: #595959;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    gap: 4px;
+    align-items: flex-end;
+}
+
+.dedicated_development_team_box .profile_img_wrapper .rating span {
+    color: #161616;
+    font-size: 12px;
+    font-weight: 600;
+    /* color: #FFAA05; */
+    line-height: 14px;
+    background-image: url(../../../assets/images/team/stars.svg);
+    background-size: 78px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 85px;
+}
+
+.dedicated_development_team_box .profile_img_wrapper .rating span strong {
+    font-weight: 600;
+    color: #161616;
+}
+@media (max-width: 1199px) {
+    .dedicated_development_team_box {
+        margin: 30px 10px 30px 15px;
+    }
+}
+@media (max-width: 767px) {
+    .dedicated_development_team_box {
+        margin: 30px 5px 30px 5px;
+    }
+}
+@media (max-width: 575px) {
+    .dedicated_development_team_box {
+        max-width: 95%;
+        margin: 30px auto;
+    }
+}

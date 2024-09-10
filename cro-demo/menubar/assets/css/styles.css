@@ -1,0 +1,243 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+/*===== VARIABLES CSS =====*/
+:root{
+  --nav-width: 92px;
+
+  /*===== Colores =====*/
+  --cyan: #47BEEE;
+  --ruby: #F03760;
+  --knite: #171733;
+  --mandarin: #F5A758;
+  --snow: #F6F6F6;
+  --mint: #81EAA5;
+  --lavendar: #B5A7FD;
+  --black: #000000;
+  --white: #ffffff;
+  
+  --body-font: 'Brandon Grotesque', sans-serif;
+  --normal-font-size: 1rem;
+  --small-font-size: .875rem;
+  
+  /*===== z index =====*/
+  --z-fixed: 100;
+}
+
+
+/*===== BASE =====*/
+*,::before,::after{
+  box-sizing: border-box;
+}
+body{
+  position: relative;
+  margin: 0;
+  padding: 2rem 0 0 6.75rem;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  transition: .5s;
+}
+h1{
+  margin: 0;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+
+/*===== l NAV =====*/
+.l-navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100vh;
+  background-color: var(--knite);
+  color: var(--white);
+  padding: 30px 0;
+  transition: .5s;
+  z-index: var(--z-fixed);
+}
+
+/*===== NAV =====*/
+.nav{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  padding-left: 15px;
+}
+.nav__brand{
+  display: grid;
+  grid-template-columns: max-content max-content;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.nav__toggle{
+  font-size: 1.25rem;
+  padding: .75rem;
+  cursor: pointer;
+}
+.nav__logo{
+  display: block;
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  margin-bottom: 75px;
+  margin-left: auto;
+
+}
+.nav__logo img {
+  margin-left: -10px;
+}
+.nav__link{
+  display: flex;
+  align-items: flex-start;
+  column-gap: .75rem;
+  padding: 17px;
+  color: var(--white);
+  border-radius: 30px 0 0 30px;
+  cursor: pointer;
+  position: relative;
+  flex-direction: column;
+}
+.nav__link a:hover{
+  color: var(--knite);
+}
+.nav__link:hover{
+  background-color: #F8F8FB;
+  color: var(--knite);
+}
+.nav__link a{
+  color: var(--white);
+}
+.nav__icon{
+  font-size: 1.25rem;
+}
+.nav__icon img{
+  filter: invert(1) contrast(2);
+  display: block;
+}
+.nav__name{
+  display: block;
+  font-family: 'Brandon Grotesque';
+  font-size: 18px;
+  line-height: 24px;
+  visibility: hidden;
+}
+.collapse__link img{
+  display: block;
+}
+
+.expander .collapse__link img{
+  filter: invert(1) contrast(2);
+}
+.expander .nav__link.active .collapse__link img,
+.expander .nav__link:hover .collapse__link img{
+  filter: invert(0) contrast(1);
+}
+
+.nav__link .nav-title {
+  display: flex;
+  column-gap: .75rem;
+  width: 100%;
+}
+
+.nav__link .nav-title span.nav__name {
+  flex: 1;
+  white-space: nowrap;
+}
+
+.nav__link .nav-title span.collapse__link {
+  margin-right: auto;
+  visibility: hidden;
+}
+.expander .nav__link .nav-title span.collapse__link{
+  visibility: visible;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+/*Expander menu*/
+.expander{
+  width: 248px;
+}
+
+.expander .collapse__link,
+.expander .nav__name{
+  display: block;
+  visibility: visible;
+}
+
+/*Add padding body*/
+.body-pd{
+  padding: 2rem 0 0 16rem;
+}
+
+/*Active links menu*/
+.active{
+  background-color: #F8F8FB;
+  position: relative;
+}
+.nav__link:before, .nav__link:after{  
+  content: '';
+  display: block;
+  width: 31px;
+  height: 26px;
+  position: absolute;
+  transition: .3s;
+  right: 0;
+}
+.nav__link:hover:before,
+.nav__link.active:before{
+  background: url('../images/active-menu-corner-bottom.svg') no-repeat 0 0;
+  top: 100%;
+}
+.nav__link:hover:after,
+.nav__link.active:after{
+  background: url('../images/active-menu-corner-top.svg') no-repeat 0 0;
+  bottom: 100%;
+}
+
+.nav__link:hover .nav__icon img,
+.nav__link.active .nav__icon img{
+  filter: invert(0) contrast(1);
+}
+.nav__link.active a,
+.nav__link.active {
+  color: var(--knite);
+}
+
+/*===== COLLAPSE =====*/
+.collapse__link{
+  justify-self: flex-end;
+  transition: .5s;
+}
+.collapse__menu{
+  display: none;
+  padding: .75rem 2.25rem;
+}
+.collapse__sublink{
+  color: var(--knite);
+  font-size: var(--small-font-size);
+}
+.collapse__sublink:hover{
+  color: var(--mandarin);
+}
+
+/*Show collapse*/
+.showCollapse{
+  display: block;
+}
+
+/*Rotate icon*/
+.rotate{
+  transform: rotate(180deg);
+}

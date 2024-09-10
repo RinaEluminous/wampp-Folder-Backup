@@ -1,0 +1,9 @@
+.screen-reader-response {
+    display: none;
+}
+span.wpcf7-not-valid-tip {
+    color: red;
+}
+.wpcf7-response-output {
+    color: brown;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flickity Slider with FancyBox</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    
+    <style>
+     .main-gallery {
+    width: 672px;
+    height: 504px;
+    }
+
+    .main-gallery .gallery-cell {
+    width: 100%;
+    height: 100%;
+    }
+
+    .thumbnail-gallery {
+    width: 672px;
+    height: 90px;
+    margin-top: 10px;
+    }
+
+    .thumbnail-gallery .gallery-cell {
+    width: 120px;
+    height: 90px;
+    margin-right: 10px;
+    }
+
+    .thumbnail-gallery .gallery-cell img {
+    width: 100%;
+    height: 100%;
+    }
+
+    </style>
+</head>
+<body>
+
+    <div class="main-gallery" data-flickity='{ "wrapAround": true, "pageDots": false }'>
+        <div class="gallery-cell">
+          <a href="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_b.jpg" data-fancybox="gallery">
+            <img src="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_b.jpg" alt="Image 1">
+          </a>
+        </div>
+        <div class="gallery-cell">
+          <a href="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" data-fancybox="gallery">
+            <img src="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" alt="Image 2">
+          </a>
+        </div>
+        <div class="gallery-cell">
+            <a href="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" data-fancybox="gallery">
+              <img src="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" alt="Image 3">
+            </a>
+          </div>
+          <div class="gallery-cell">
+            <a href="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" data-fancybox="gallery">
+              <img src="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" alt="Image 4">
+            </a>
+          </div>
+          <div class="gallery-cell">
+            <a href="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" data-fancybox="gallery">
+              <img src="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" alt="Image 5">
+            </a>
+          </div>
+        <!-- Add more images as needed -->
+      </div>
+      
+      <div class="thumbnail-gallery" data-flickity='{ "asNavFor": ".main-gallery", "contain": true, "pageDots": false }'>
+        <div class="gallery-cell">
+          <img src="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_b.jpg" alt="Image 1">
+        </div>
+        <div class="gallery-cell">
+          <img src="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" alt="Image 2">
+        </div>
+        <div class="gallery-cell">
+            <img src="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" alt="Image 3">
+          </div>
+          <div class="gallery-cell">
+            <img src="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" alt="Image 4">
+          </div>
+          <div class="gallery-cell">
+            <img src="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" alt="Image ">
+          </div>
+        <!-- Add more thumbnails as needed -->
+      </div>
+      
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script>
+ $(document).ready(function() {
+  $('.main-gallery').flickity({
+    wrapAround: true,
+    pageDots: false
+  });
+
+  $('.thumbnail-gallery').flickity({
+    asNavFor: '.main-gallery',
+    contain: true,
+    pageDots: false
+  });
+
+  $('[data-fancybox="gallery"]').fancybox({
+    buttons: [
+      "zoom",
+      "close"
+    ]
+  });
+});
+
+</script>
+
+</body>
+</html>

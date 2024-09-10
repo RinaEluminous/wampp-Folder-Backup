@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#Testimonials_slider").owlCarousel({loop:!0,margin:20,nav:!1,responsive:{0:{items:1,margin:10},768:{items:1},992:{items:1},1440:{items:2},1600:{items:2},2e3:{items:2},},});});

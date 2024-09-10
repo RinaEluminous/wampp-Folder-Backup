@@ -1,0 +1,1 @@
+jQuery(document).ready(function(){$("#team_member_talk").owlCarousel({loop:true,autoplay:true,nav:true,dots:true,autoplayTimeout:5e3,responsiveClass:!0,responsive:{0:{items:1,loop:!0},1024:{items:1,loop:!0}},});});

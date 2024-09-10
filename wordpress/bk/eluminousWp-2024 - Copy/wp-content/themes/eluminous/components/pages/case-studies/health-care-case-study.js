@@ -1,0 +1,1 @@
+jQuery(document).ready(function(){jQuery(".owl-casestudies").owlCarousel({autoplay:true,autoplayTimeout:3000,items:1,loop:false,margin:7,nav:false,});});

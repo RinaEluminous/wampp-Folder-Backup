@@ -1,0 +1,7 @@
+ // Wp Details //
+
+**************************************************************************
+
+db name = constra
+username = constra
+password = constra@gmail.com

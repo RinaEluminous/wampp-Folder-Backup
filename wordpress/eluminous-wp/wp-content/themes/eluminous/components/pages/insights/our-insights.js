@@ -1,0 +1,1 @@
+jQuery(document).ready(function(){jQuery(".our_insightss").owlCarousel({autoPlay:3000,items:4,loop:false,nav:false,responsiveClass:true,responsive:{300:{items:1},768:{items:2},992:{items:2},1200:{items:3}}});});
